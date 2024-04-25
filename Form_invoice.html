@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+/* Additional custom styles if needed */
+</style>
+</head>
+<body>
+    <!-- Top bar -->
+    <div class="container-fluid bg-light pl-4" style="padding: 10px;">
+        <div class="row align-items-center">
+            <div class="col-2 d-flex align-items-center">
+                <i class="fas fa-file file-icon text-primary"></i>
+                <p class="ml-2 mb-0">New Invoice</p>
+            </div>
+            <div class="col-10 text-right">
+                <i class="fas fa-cog settings-icon text-primary mr-3"></i>
+                <i class="fas fa-times close-icon text-primary"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white" style="max-width: 600px; margin-top: 10px;" >
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center">
+                    <p class="text-danger mr-2 mb-0" style="width: 150px; margin-left: 10px;">Current Name</p>
+                    <div class="input-group" style="margin-left: 30px;">
+                        <select class="custom-select" style="width: 150px; height: 34px;">
+                            <option selected>Khalid</option>
+                            <option selected>Mohamed</option>
+                            <option selected>Choose customer name</option>
+                        </select>
+                        <div class="input-group-append">
+                            <button class="btn btn-danger" type="button" style="height: 34px;"><i class="fas fa-search" style="height: 100%;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="bg-white" style="max-width: 400px; margin-top: 10px;">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center">
+                    <p class="text-danger mr-2 mb-0" style="width: 150px; margin-left: 10px;">Invoice</p>
+                    <div class="input-group" style="margin-left: 10px;">
+                        <input type="text" class="form-control" style="width: 0px; height: 34px; margin-left: 30px;" value="KUH*HJ">
+                        <div class="input-group-append">
+                            <button class="btn btn-danger" type="button" style="height: 34px;"><i class="fas fa-cog" style="height: 100%;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white" style="max-width: 400px; margin-top: 10px;">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center">
+                    <p class=" mr-2 mb-0" style="width: 150px; margin-left: 10px;">Oder Number</p>
+                    <div class="input-group" style="margin-left: 10px;">
+                        <input type="text" class="form-control" style="width: 0px; height: 34px; margin-left: 30px;">
+                        <div class="input-group-append">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-white" style="max-width: 800px; margin-top: 10px; margin-left: 0;">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center">
+                    <div class="bg-white mr-3">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <p class=" text-danger mr-2 mb-0" style="width: 180px;">Invoice Date</p>
+                                    <div class="input-group" style="margin-left: 10px;">
+                                        <input type="date" class="form-control" style="width: 100px; height: 34px; margin-left: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid bg-white ">
+                        <div class="row">
+                            <div class="col">
+                                <div class="d-flex align-items-center terms-section">
+                                    <p class="mr-2 mb-0">Terms</p>
+                                    <select class="custom-select mr-2" style="width: 100px;">
+                                        <option selected>Advanced</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-center due-date-section">
+                                    <p class="text-danger mr-2 mb-0 ">Due Date</p>
+                                    <input type="date" class="form-control" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<hr>    
+<div class="bg-white" style="max-width: 400px; margin-top: 10px;">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex align-items-center">
+                <p class="mr-2 mb-0" style="width: 150px; margin-left: 10px;">Salesperson</p>
+                <div class="input-group" style="margin-left: 10px;">
+                    <select class="custom-select" style="width: 200px; margin-left: 30px;">
+                        <option selected>Select salesperson</option>
+                        <option>Salesperson 1</option>
+                        <option>Salesperson 2</option>
+                        <option>Salesperson 3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="bg-white" style="max-width: 400px; margin-top: 10px;">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex align-items-center">
+                <p class="mr-2 mb-0" style="width: 150px; margin-left: 10px;">Subject</p>
+                <div class="input-group" style="margin-left: 10px;">
+                    <textarea class="form-control" style="width: 170px; height: 34px; margin-left: 30px;" placeholder="Let you customer Know what invoice"></textarea>
+                    <div class="input-group-append">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<div class="bg-white" style="max-width: 400px; margin-top: 10px;">
+    <div class="row">
+        <div class="col">
+            <div class="d-flex align-items-center">
+                <p class="mr-2 mb-0" style="width: 150px; margin-left: 10px;">Warehouse</p>
+                <div class="input-with-dotted-border" style="margin-left: 10px;">
+                    <select class="custom-select" style="border: none; border-bottom: 1px dotted #ccc; padding: 5px; width: 150px;">
+                        <option selected>New Order</option>
+                        <!-- Add more options as needed -->
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div style="width: 800px;">
+    <div style="width: 100%; background-color: #f0f0f0; padding: 10px;">
+        <h5 style="margin: 0;">Item Table</h5>
+    </div>
+    <table id="item-table" style="width: 100%; border-collapse: collapse; margin-top: 10px; border: 1px solid #ccc;">
+        <thead>
+            <tr>
+                <th style="width: 25%; border: 1px solid #ccc;">Item details</th>
+                <th style="width: 15%; border: 1px solid #ccc;">Quantity</th>
+                <th style="width: 15%; border: 1px solid #ccc;">Rate</th>
+                <th style="width: 15%; border: 1px solid #ccc;">Discount</th>
+                <th style="width: 15%; border: 1px solid #ccc;">Amount</th>
+                <th style="width: 15%; border: 1px solid #ccc;">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ccc;">
+                    <div style="display: flex; align-items: center;">
+                        <label for="image-upload" class="upload-icon"><i class="fas fa-upload"></i></label>
+                        <input type="file" id="image-upload" style="display: none;">
+                    </div>
+                </td>
+                <td style="border: 1px solid #ccc;"><input type="number" class="quantity-input" style="width: 100%; height: 34px; border: none;"></td>
+                <td style="border: 1px solid #ccc;"><input type="number" class="rate-input" style="width: 100%; height: 34px; border: none;"></td>
+                <td style="border: 1px solid #ccc;"><input type="number" class="discount-input" style="width: 100%; height: 34px; border: none;"></td>
+                <td style="border: 1px solid #ccc;"><input type="text" class="amount-input" readonly style="width: 100%; height: 34px; border: none;"></td>
+                <td style="border: 1px solid #ccc;"><i class="fas fa-times delete-row" style="cursor: pointer;"></i></td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="add-row-btn" style="margin-top: 10px; padding: 8px 16px; font-size: 14px; background-color: #7f8286; color: #fff; border: none; border-radius: 4px; cursor: pointer;"><i class="fas fa-plus"></i> Add Row</button>
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: flex-start; margin-right: 40px; width: 740px;">
+    <div style="margin-top: 200px;">
+        <p>Customer Notes</p>
+        <textarea id="customer-notes" rows="3" style="width: 100%; height: 40px;" placeholder="Thanks for your business"></textarea>
+        <p>Displayed on the Invoice</p>
+    </div>
+    <div style="width: 500px; margin-top: 20px; border-radius: 10px; background-color: rgba(160, 158, 153, 0.119); padding: 20px;">
+        <div>
+            <!-- Subtotal -->
+            <div id="subtotal" style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <p>Subtotal</p>
+                <p id="subtotal-value">0.00</p>
+            </div>
+            <!-- Shipping Charges -->
+            <div id="shipping-charges" style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <p>Shipping Charges</p>
+                <input id="shipping-charges-input" type="text" value="0.00" style="width: 100px; height: 30px;">
+                <p>0.00</p>
+            </div>
+            <!-- Apply Shipping Charges -->
+            <div id="apply-shipping-charges" style="margin-bottom: 10px;">
+                <p style="color: blue;">Apply Shipping Charges</p>
+                <div style="display: flex; justify-content: space-between;">
+                    <input id="adjustment-input" type="text" value="Adjustment" style="width: 100px; height: 30px;">
+                    <input id="apply-shipping-input" type="text" style="width: 100px; height: 30px;">
+                    <p>0.00</p>
+                </div>
+            </div>
+            <hr>
+            <!-- Total -->
+            <div id="total" style="display: flex; justify-content: space-between; margin-top: 10px;">
+                <h4>Total($)</h4>
+                <p id="total-value">0.00</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="position: relative; background-color: #f9f9f9; box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); height: 60px;">
+    <!-- Buttons -->
+    <div style="position: absolute; bottom: 10px; left: 20px;">
+        <button style="background-color: red; color: white; border: none; outline: none; padding: 5px 16px; border-radius: 4px; margin-right: 10px;">Save Draft</button>
+        <button style="background-color: red; color: white; border: none; outline: none; padding: 5px 16px; border-radius: 4px; margin-right: 10px;">Save & Send <i class="fas fa-caret-up"></i></button>
+        <button style="border: 1px solid #ccc; padding: 5px 16px; border-radius: 4px;">Cancel</button>
+    </div>
+    <!-- Total -->
+    <div style="position: absolute; bottom: -10px; right: 20px; text-align: right;">
+        <h5>Total Amount</h5>
+        <p>Total Quantity</p>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Calculate subtotal, shipping charges, and total
+    function calculateTotal() {
+        let subtotal = 0;
+        document.querySelectorAll('.amount-input').forEach(function(input) {
+            subtotal += parseFloat(input.value) || 0;
+        });
+        document.getElementById('subtotal-value').textContent = subtotal.toFixed(2);
+
+        let shippingCharges = parseFloat(document.getElementById('shipping-charges-input').value) || 0;
+        document.getElementById('shipping-charges').children[2].textContent = shippingCharges.toFixed(2);
+
+        let adjustment = parseFloat(document.getElementById('apply-shipping-input').value) || 0;
+        document.getElementById('apply-shipping-charges').children[2].textContent = adjustment.toFixed(2);
+
+        let total = subtotal + shippingCharges + adjustment;
+        document.getElementById('total-value').textContent = total.toFixed(2);
+    }
+
+    // Update amount when quantity, rate, or discount changes
+    function updateAmount() {
+        let quantity = parseFloat(this.parentElement.parentElement.children[1].children[0].value) || 0;
+        let rate = parseFloat(this.parentElement.parentElement.children[2].children[0].value) || 0;
+        let discount = parseFloat(this.parentElement.parentElement.children[3].children[0].value) || 0;
+        let amount = quantity * rate - discount;
+        this.parentElement.parentElement.children[4].children[0].value = amount.toFixed(2);
+        calculateTotal();
+    }
+
+    // Add event listeners for inputs
+    document.querySelectorAll('.quantity-input, .rate-input, .discount-input').forEach(function(input) {
+        input.addEventListener('input', updateAmount);
+    });
+
+    // Delete row
+    document.querySelectorAll('.delete-row').forEach(function(deleteBtn) {
+        deleteBtn.addEventListener('click', function() {
+            this.parentElement.parentElement.remove();
+            calculateTotal();
+        });
+    });
+
+    // Add row
+    document.getElementById('add-row-btn').addEventListener('click', function() {
+        let newRow = document.querySelector('tbody tr').cloneNode(true);
+        newRow.querySelector('.quantity-input').value = '';
+        newRow.querySelector('.rate-input').value = '';
+        newRow.querySelector('.discount-input').value = '';
+        newRow.querySelector('.amount-input').value = '';
+        newRow.querySelector('.delete-row').addEventListener('click', function() {
+            newRow.remove();
+            calculateTotal();
+        });
+        newRow.querySelectorAll('.quantity-input, .rate-input, .discount-input').forEach(function(input) {
+            input.addEventListener('input', updateAmount);
+        });
+        document.querySelector('tbody').appendChild(newRow);
+    });
+
+    // Calculate total on load
+    calculateTotal();
+</script>
+</body>
+</html>
